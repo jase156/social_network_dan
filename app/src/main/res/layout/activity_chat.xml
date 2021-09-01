@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="false"
+    android:fitsSystemWindows="true"
+    tools:context=".Chat">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbarChat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        tools:ignore="UnusedAttribute"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lista_mensajes"
+            android:divider="#fff"
+            android:layout_weight="2"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/txvBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="clip_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Mensaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="Escribe tu mensaje"
+                android:inputType="text"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/Enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/ic_menu_send"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Boton Enviar"/>
+        </LinearLayout>
+</LinearLayout>

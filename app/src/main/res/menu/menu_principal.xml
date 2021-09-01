@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Principal">
+
+    <item
+        android:id="@+id/pAction_reconocimiento"
+        android:icon="@drawable/ic_dan_white_24dp"
+        android:title="Chatear"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/pAction_add"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Agregar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/pAction_chat"
+        android:icon="@drawable/ic_chat_white_24dp"
+        android:title="Chatear"
+        app:showAsAction="always" />
+
+</menu>
